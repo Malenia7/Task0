@@ -1,0 +1,558 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "DialPage",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "FrontDial",
+            "X": 40,
+            "Width": 240,
+            "Height": 240,
+            "LockPosition": true,
+            "Filename": "Container\\overlay-240x240.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "SwipeContainer",
+            "Name": "DialSwipe",
+            "X": 40,
+            "Width": 240,
+            "Height": 240,
+            "LockPosition": true,
+            "SwipeCutoff": 50,
+            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
+            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "SwipeDigital",
+            "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "SwipeTool",
+                "Width": 240,
+                "Height": 240,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "ScalableImage",
+                    "Name": "BackTool",
+                    "Width": 240,
+                    "Height": 240,
+                    "LockPosition": true,
+                    "Filename": "Container\\Tool.png",
+                    "ScalingAlgorithm": "Nearest-neighbor"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "ButtonAlipay",
+                    "X": 130,
+                    "Y": 130,
+                    "Width": 70,
+                    "Height": 70,
+                    "LockPosition": true,
+                    "Pressed": "Container\\Alipay_pressed-60x60.png",
+                    "Released": "Container\\Alipay-60x60.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "ButtonStress",
+                    "X": 40,
+                    "Y": 130,
+                    "Width": 70,
+                    "Height": 70,
+                    "LockPosition": true,
+                    "Pressed": "Container\\Stress_pressed-60x60.png",
+                    "Released": "Container\\Stress-60x60.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "ButtonBreathe",
+                    "X": 130,
+                    "Y": 40,
+                    "Width": 70,
+                    "Height": 70,
+                    "LockPosition": true,
+                    "Pressed": "Container\\Breathe_pressed-60x60.png",
+                    "Released": "Container\\Breathe-60x60.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "ButtonCount",
+                    "X": 40,
+                    "Y": 40,
+                    "Width": 70,
+                    "Height": 70,
+                    "LockPosition": true,
+                    "Pressed": "Container\\Count_pressed-60x60.png",
+                    "Released": "Container\\Count-60x60.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeDigital",
+                "Width": 240,
+                "Height": 240,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "ScalableImage",
+                    "Name": "BackD",
+                    "Width": 240,
+                    "Height": 240,
+                    "LockPosition": true,
+                    "Filename": "DialPage\\watchface_digital_circle.png",
+                    "ScalingAlgorithm": "Nearest-neighbor"
+                  },
+                  {
+                    "Type": "DigitalClock",
+                    "Name": "DigitalClock",
+                    "X": 33,
+                    "Y": 104,
+                    "Width": 180,
+                    "Height": 50,
+                    "LockPosition": true,
+                    "TextColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextId": "__SingleUse_U1EG",
+                    "DisplaySeconds": true,
+                    "DisplayLeadingZeroForHourIndicator": true,
+                    "InitialHour": 10,
+                    "InitialMinute": 10
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextDateD",
+                    "X": 120,
+                    "Y": 160,
+                    "Width": 85,
+                    "Height": 29,
+                    "LockPosition": true,
+                    "TextId": "SysDate",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_N0WG",
+                      "UseBuffer": true,
+                      "BufferSize": 3
+                    },
+                    "Wildcard2": {
+                      "TextId": "__SingleUse_M01F",
+                      "UseBuffer": true,
+                      "BufferSize": 3
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextYearD",
+                    "X": 40,
+                    "Y": 160,
+                    "Width": 64,
+                    "Height": 29,
+                    "LockPosition": true,
+                    "TextId": "SysYear",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_RNBZ",
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextWeekD",
+                    "X": 100,
+                    "Y": 190,
+                    "Width": 45,
+                    "Height": 29,
+                    "LockPosition": true,
+                    "TextId": "SysWeek",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_MFGQ",
+                      "UseBuffer": true,
+                      "BufferSize": 2
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextTempD",
+                    "X": 155,
+                    "Y": 75,
+                    "Width": 50,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Temp",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_G42F",
+                      "UseBuffer": true,
+                      "BufferSize": 6
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextStepD",
+                    "X": 90,
+                    "Y": 75,
+                    "Width": 60,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Step",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_IMEI",
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextPulseD",
+                    "X": 40,
+                    "Y": 75,
+                    "Width": 40,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Pulse",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_CU2K",
+                      "UseBuffer": true,
+                      "BufferSize": 4
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeAnalog",
+                "Width": 240,
+                "Height": 240,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "AnalogClock",
+                    "Name": "AnalogClock",
+                    "Width": 240,
+                    "Height": 240,
+                    "LockPosition": true,
+                    "FileNameBackground": "DialPage\\watchface_analog.png",
+                    "RotationCenterX": 120,
+                    "RotationCenterY": 120,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "ClockHands": [
+                      {
+                        "Type": "MinuteClockHand",
+                        "FileNameHandImage": "DialPage\\watchhand_minute.png",
+                        "RotationCenterX": 5,
+                        "RotationCenterY": 92
+                      },
+                      {
+                        "Type": "HourClockHand",
+                        "FileNameHandImage": "DialPage\\watchhand_hour.png",
+                        "RotationCenterY": 55
+                      },
+                      {
+                        "Type": "SecondClockHand",
+                        "FileNameHandImage": "DialPage\\watchhand_second.png",
+                        "RotationCenterY": 100
+                      }
+                    ],
+                    "InitialHour": 10,
+                    "InitialMinute": 10
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextDate",
+                    "X": 170,
+                    "Y": 130,
+                    "Width": 30,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_XYZP",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_TNR0",
+                      "UseBuffer": true,
+                      "BufferSize": 3
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextTemp",
+                    "X": 135,
+                    "Y": 50,
+                    "Width": 50,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Temp",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_B6OG",
+                      "UseBuffer": true,
+                      "BufferSize": 6
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextStep",
+                    "X": 40,
+                    "Y": 130,
+                    "Width": 60,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Step",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_7G7G",
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TextPulse",
+                    "X": 120,
+                    "Y": 180,
+                    "Width": 40,
+                    "Height": 24,
+                    "LockPosition": true,
+                    "TextId": "Pulse",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_62PE",
+                      "UseBuffer": true,
+                      "BufferSize": 4
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "modalWindow1",
+            "Width": 320,
+            "Height": 240,
+            "Visible": false,
+            "LockPosition": true,
+            "FileName": "Container\\Tool.png",
+            "ModalX": 40,
+            "ModalWidth": 240,
+            "ModalHeight": 240,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "Slider",
+                "Name": "slider1",
+                "X": 145,
+                "Y": 20,
+                "Width": 28,
+                "Height": 204,
+                "LockPosition": true,
+                "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_vertical_thick_filler_small.png",
+                "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_vertical_thick_filler_small.png",
+                "Indicator": "__generated\\alternate_theme_images_widgets_slider_horizontal_thin_rounded_dark.png",
+                "BackgroundX": 12,
+                "IndicatorPos": 4,
+                "IndicatorMax": 180,
+                "ValueMax": 100,
+                "InitValue": 5
+              }
+            ]
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "AppPage",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "BackApp",
+            "X": 40,
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "Container\\Tool.png"
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "AppScroll",
+            "X": 40,
+            "Width": 240,
+            "Height": 240,
+            "IsCircular": true,
+            "ItemTemplateName": "MenuElement",
+            "NumberofItems": 7,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "FrontApp",
+            "X": 40,
+            "Width": 240,
+            "Height": 240,
+            "Filename": "Container\\overlay-240x240.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "MenuElement",
+        "Width": 240,
+        "Height": 64,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "Text",
+            "X": 64,
+            "Y": 15,
+            "Width": 150,
+            "Height": 35,
+            "TextId": "__SingleUse_2E22",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_Z1UJ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Icon",
+            "X": 10,
+            "Y": 10,
+            "Width": 40,
+            "Height": 40,
+            "Filename": "APPPage\\ApplicationPage_image_Health.png",
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Clickable": true
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "DialPage",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Toolchain": "MDK-ARM V5.32",
+    "Platform": "m33",
+    "ProjectFile": "../rev1.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.21.2"
+}

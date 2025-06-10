@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.21.2">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1">
+      <Text Id="Pulse" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;VAL&gt;</Translation>
+      </Text>
+      <Text Id="Step" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;VAL&gt;</Translation>
+      </Text>
+      <Text Id="Temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;VAL&gt;</Translation>
+      </Text>
+      <Text Id="SysWeek" Alignment="Center" TypographyId="Ch_20">
+        <Translation Language="GB">周 &lt;VAL&gt;</Translation>
+      </Text>
+      <Text Id="SysYear" Alignment="Center" TypographyId="Ch_20">
+        <Translation Language="GB">&lt;VAL&gt;年</Translation>
+      </Text>
+      <Text Id="SysDate" Alignment="Center" TypographyId="Ch_20">
+        <Translation Language="GB">&lt;VAL&gt;月&lt;VAL&gt;日</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_Z1UJ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">健康监测</Translation>
+      </Text>
+      <Text Id="__SingleUse_2E22" Alignment="Center" TypographyId="Ch_26">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XYZP" Alignment="Center" TypographyId="Ch_20">
+        <Translation Language="GB">&lt;VAL&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M01F" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">01</Translation>
+      </Text>
+      <Text Id="__SingleUse_N0WG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">01</Translation>
+      </Text>
+      <Text Id="__SingleUse_RNBZ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">2000</Translation>
+      </Text>
+      <Text Id="__SingleUse_MFGQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">一</Translation>
+      </Text>
+      <Text Id="__SingleUse_G42F" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">30.6</Translation>
+      </Text>
+      <Text Id="__SingleUse_IMEI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_CU2K" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_U1EG" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TNR0" Alignment="Left" TypographyId="Ch_20">
+        <Translation Language="GB">01</Translation>
+      </Text>
+      <Text Id="__SingleUse_B6OG" Alignment="Left" TypographyId="Ch_20">
+        <Translation Language="GB">30.6</Translation>
+      </Text>
+      <Text Id="__SingleUse_7G7G" Alignment="Left" TypographyId="Ch_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_62PE" Alignment="Left" TypographyId="Ch_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="timesbi.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789+-:()=" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Large" Font="timesbi.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789:AMP" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="!-~" />
+    <Typography Id="Small" Font="timesbi.ttf" Size="13" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="01234567890+-:()=" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Ch_16" Font="NotoSansSC-VF.ttf" Size="16" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="01234567890+-:()=" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Ch_20" Font="NotoSansSC-VF.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="01234567890+-:()=年月日周一二三四五六日" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Ch_26" Font="NotoSansSC-VF.ttf" Size="26" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="健康监测姿态感知环境信息芯片信息外部控制电池电量蓝牙连接" />
+  </Typographies>
+</TextDatabase>
